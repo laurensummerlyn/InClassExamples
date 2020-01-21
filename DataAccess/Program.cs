@@ -39,6 +39,8 @@ namespace DataAccess
             result = Add(allTheNumbers);
             Console.WriteLine(result);
 
+            DatabaseStuff(); //call to show on console
+
             Console.ReadKey();
         }
        
@@ -103,11 +105,22 @@ namespace DataAccess
 
                 using (var command = connection.CreateCommand())
                 {
-                    command.CommandText = "SELECT * FROM TABLE";
+                    command.CommandText = "SELECT *" + 
+                        /*"FirstName" +
+                        "LastName" +
+                        "Email" +
+                        "Gender" +
+                        "Address" +
+                        "City" +
+                        "State" +
+                        "ZipCode" +
+                        "FROM Customer";*/
                     using (var reader = command.ExecuteReader())
                     {
-                        //rest uploaded to canvas
-
+                        while (reader.Read())
+                        {
+                            Console.WriteLine(reader[0].ToString());
+                        }
                     }
                 }
             }
