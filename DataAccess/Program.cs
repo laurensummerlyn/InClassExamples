@@ -1,6 +1,7 @@
 ﻿//Lauren Watson
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -90,6 +91,26 @@ namespace DataAccess
         public static double Subtract(double val1, double val2)
         {
             return val1 - val2;
+        }
+
+        static void DatabaseStuff()
+        {
+            string connectionString = "";
+            using (var connection = new SqlConnection())
+            {
+                connection.ConnectionString = connectionString;
+                connection.Open();
+
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = "SELECT * FROM TABLE";
+                    using (var reader = command.ExecuteReader())
+                    {
+                        //rest uploaded to canvas
+
+                    }
+                }
+            }
         }
     }
 }
