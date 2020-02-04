@@ -1,0 +1,22 @@
+﻿<Window x:Class="FileProcessingWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileProcessingWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnPride" Content="Get Pride" HorizontalAlignment="Left" Margin="77,341,0,0" VerticalAlignment="Top" Width="134" Height="62" Click="btnPride_Click"/>
+        <Button x:Name="btnSales" Content="Get Sales" HorizontalAlignment="Left" Margin="512,341,0,0" VerticalAlignment="Top" Width="129" Height="62" Click="btnSales_Click"/>
+        <RichTextBox x:Name="rtbPride" HorizontalAlignment="Left" Height="326" Margin="10,10,0,0" VerticalAlignment="Top" Width="313">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <ListBox x:Name="lstSales" HorizontalAlignment="Left" Height="326" Margin="417,10,0,0" VerticalAlignment="Top" Width="320"/>
+
+    </Grid>
+</Window>
