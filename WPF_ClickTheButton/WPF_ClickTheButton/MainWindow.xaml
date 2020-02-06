@@ -1,0 +1,19 @@
+﻿<Window x:Name="mainWindow" x:Class="WPF_ClickTheButton.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_ClickTheButton"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="grdMain" MouseEnter="grdMain_MouseEnter">
+        <Button x:Name="btnClick" Content="Submit" HorizontalAlignment="Left" Margin="320,161,0,0" VerticalAlignment="Top" Width="124" Height="63" MouseEnter="btnClick_MouseEnter" FontFamily="Calibri" FontSize="22"/>
+        <Label x:Name="lblSignUp" Content="Sign Up for the Mailing List" HorizontalAlignment="Left" Margin="224,28,0,0" VerticalAlignment="Top" Height="49" Width="315" FontFamily="SAS Monospace" FontSize="22"/>
+        <Label x:Name="lblName" Content="Name:" HorizontalAlignment="Left" Margin="279,77,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Margin="357,77,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblEmail" Content="Email:" HorizontalAlignment="Left" Margin="279,119,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="23" Margin="357,119,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblInfo" Content="Label" HorizontalAlignment="Left" Margin="357,260,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
