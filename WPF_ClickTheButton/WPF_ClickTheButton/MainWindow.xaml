@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="grdMain" Background="LightSteelBlue" MouseEnter="grdMain_MouseEnter">
-        <Button x:Name="btnClick" Background="Ivory" BorderBrush="DarkBlue" Content="Submit" HorizontalAlignment="Left" Margin="320,161,0,0" VerticalAlignment="Top" Width="124" Height="63" MouseEnter="btnClick_MouseEnter" FontFamily="Calibri" FontSize="22"/>
+        <Button x:Name="btnClick" Background="Ivory" BorderBrush="DarkBlue" Content="Submit" HorizontalAlignment="Left" Margin="320,161,0,0" VerticalAlignment="Top" Width="124" Height="63" MouseEnter="btnClick_MouseEnter" FontFamily="SAS Monospace" FontSize="22"/>
         <Label x:Name="lblSignUp" Content="Sign Up for the Mailing List" HorizontalAlignment="Left" Margin="224,28,0,0" VerticalAlignment="Top" Height="49" Width="315" FontFamily="SAS Monospace" FontSize="22"/>
         <Label x:Name="lblName" Content="Name:" HorizontalAlignment="Left" Margin="279,77,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Margin="357,77,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>

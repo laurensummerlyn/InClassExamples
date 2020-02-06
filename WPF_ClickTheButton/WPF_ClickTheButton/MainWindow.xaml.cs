@@ -38,6 +38,7 @@ namespace WPF_ClickTheButton
 
         private void grdMain_MouseEnter(object sender, MouseEventArgs e)
         {
+            //not necessary
             lblInfo.Content = $"X: {e.GetPosition(grdMain).X} Y: {e.GetPosition(grdMain).Y}";
         }
     }
