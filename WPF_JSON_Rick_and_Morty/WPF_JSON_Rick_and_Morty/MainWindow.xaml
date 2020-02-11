@@ -7,10 +7,20 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="lstCharacters" HorizontalAlignment="Left" Height="274" Margin="10,62,0,0" VerticalAlignment="Top" Width="416" SelectionChanged="lstCharacters_SelectionChanged"/>
+        <ListBox x:Name="lstCharacters" HorizontalAlignment="Left" Height="274" Margin="10,62,0,0" VerticalAlignment="Top" Width="274" SelectionChanged="lstCharacters_SelectionChanged"/>
         <Label x:Name="lblTitle" Content="Rick and Morty Characters" HorizontalAlignment="Left" Margin="300,21,0,0" VerticalAlignment="Top" Height="36" Width="192" FontSize="16" FontFamily="Calibri Light"/>
-        <Button x:Name="btnSubmit" Content="Do Something" HorizontalAlignment="Left" Margin="282,353,0,0" VerticalAlignment="Top" Width="103" Height="39"/>
-        <Image x:Name="imgCharacter" HorizontalAlignment="Left" Height="274" Margin="431,62,0,0" VerticalAlignment="Top" Width="351"/>
+        <Button x:Name="btnSubmit" Content="Do Something" HorizontalAlignment="Left" Margin="282,353,0,0" VerticalAlignment="Top" Width="103" Height="39" Click="btnSubmit_Click"/>
+        <Image x:Name="imgCharacter" HorizontalAlignment="Left" Height="135" Margin="289,114,0,0" VerticalAlignment="Top" Width="135"/>
+        <WebBrowser x:Name="wbCharacterInfo" HorizontalAlignment="Left" Height="275" Margin="428,62,0,0" VerticalAlignment="Top" Width="358" RenderTransformOrigin="0.5,0.5">
+            <WebBrowser.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.478"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </WebBrowser.RenderTransform>
+        </WebBrowser>
 
     </Grid>
 </Window>

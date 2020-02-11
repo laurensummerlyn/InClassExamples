@@ -57,5 +57,12 @@ namespace WPF_JSON_Rick_and_Morty
             //give url to image; bitmap image downloads image bits
             imgCharacter.Source = new BitmapImage(new System.Uri(selectedCharacter.image));
         }
+
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            ResultObject selectedCharacter = (ResultObject)lstCharacters.SelectedItem;
+            string googleSearch = $"https://www.google.com/search?q={selectedCharacter.name} rick and morty";
+            wbCharacterInfo.Source = new System.Uri(googleSearch);
+        }
     }
 }
